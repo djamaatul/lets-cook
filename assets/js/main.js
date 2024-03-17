@@ -44,7 +44,7 @@ let data = [];
 				}).join('');
 			}
 			return `
-				<a href="/pages/detail.html?i=${item.idMeal}" class="card">
+				<a href="pages/detail.html?i=${item.idMeal}" class="card">
 						<div class="description">
 							<h4>${item.strMeal}</h4>
 								<div class="tags">${tags}</div>
