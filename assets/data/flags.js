@@ -1,4 +1,4 @@
-{
+const flags = {
 	"American": "am",
 	"British": "gb",
 	"Canadian": "ca",
