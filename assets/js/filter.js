@@ -35,7 +35,7 @@ let data = [];
 		
 		const cards = data.slice(start, end).map(item => {
 			return `
-				<a href="../../pages/detail.html?i=${item.idMeal}" class="card-icon">
+				<a href="pages/detail.html?i=${item.idMeal}" class="card-icon">
 					<img src="${item.strMealThumb}" alt="" />
 					<h4>${item.strMeal}</h4>
 				</a>
