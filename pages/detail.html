@@ -23,12 +23,6 @@
 				<li><a href="../pages/filter.html?a=Japanese">Masakan Jepang</a></li>
 				<li><a href="#footer">Tentang</a></li>
 				<li><a href="https://github.com/djamaatul">My Github</a></li>
-				<li class="search">
-					<button>
-						<i class="fa-solid fa-magnifying-glass"></i>
-					</button>
-					<input type="text" placeholder="Cari" id="search" onkeypress="handleSearch(this,event)" onfocus="handleFocus(this)" onblur="handleBlur(this)">
-				</li>
 			</ul>
 		</nav>
 		<button class="icon-button" id="header-button">
@@ -40,62 +34,45 @@
 			<article>
 				<section class="article-title">
 					<img class="skeleton" style="width: 100%; aspect-ratio: 1/1" ></img>
-					<div style="display: flex; align-items: center; gap: .5rem">
-						<img class="skeleton" style="height: 2rem; width: 2rem;">
-						<h2 class="skeleton" style="flex: 1;height: 2rem; display: inline-block;"></h2>
-					</div>
-					<div>
-						<button type="button" class="tag skeleton">Lorem ipsum dolor sit</button>
-						<button type="button" class="tag skeleton">Lorem ipsum dolor sit</button>
-						<button type="button" class="tag skeleton">Lorem ipsum dolor sit</button>
-					</div>
 				</section>
 				<section class="article-gradients">
 					<h3>Bahan Bahan</h3>
-					<div>
-						<div class="gradient">
-							<img class="skeleton" />
-							<span class="skeleton" style="display: inline-block; height: 1rem;width: 4rem;"> </span>
-						</div>
-						<div class="gradient">
-							<img class="skeleton" />
-							<span class="skeleton" style="display: inline-block; height: 1rem;width: 4rem;"> </span>
-						</div>
-						<div class="gradient">
-							<img class="skeleton" />
-							<span class="skeleton" style="display: inline-block; height: 1rem;width: 4rem;"> </span>
-						</div>
-					</div>
 				</section>
-				<section class="article-intruction">
-					<span class="skeleton" style="display: inline-block; height: 1rem;width: 100%;"></span>
-					<span class="skeleton" style="display: inline-block; height: 1rem;width: 90%;"></span>
-					<span class="skeleton" style="display: inline-block; height: 1rem;width: 80%;"></span>
+				<section id="pagination" >
+					<button type="button" id="prev" disabled>Sebelumnya</button>
+					<span id="page"></span>
+					<button type="button" id="next">Selanjutnya</button>
 				</section>
 			</article>
 		</div>
 		<aside>
 			<section id="categories-section">
 				<h4>Pencarian berdasarkan Kategori </h4>
-				<div id="categories">
+				<figure id="categories">
 					<a href="#" class="tag skeleton" style="color: transparent">Beef</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Breakfast</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Chicken</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Dessert</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Chicken</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Dessert</a>
-				</div>
+				</figure>
+				<figure class="search">
+					<button>
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</button>
+					<input type="text" placeholder="Cari" id="search" onkeypress="handleSearch(this,event)" onfocus="handleFocus(this)" onblur="handleBlur(this)">
+				</figure>
 			</section>
 			<section id="areas-section" class="collapse-container">
 				<h4 class="collapse">Pencarian berdasarkan Negara <i class="fa-solid fa-chevron-down"></i></h4>
-				<div id="areas">
+				<figure id="areas">
 					<a href="#" class="tag skeleton" style="color: transparent">Beef</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Breakfast</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Chicken</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Dessert</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Chicken</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Dessert</a>
-				</div>
+				</figure>
 			</section>
 			<section id="random-section">
 				<h4>Masakan Rekomendasi</h4>
@@ -108,18 +85,20 @@
 		</aside>
 	</main>
 	<footer id="footer">
-		<div class="contact">
-			<div>
+		<section class="contact">
+			<figure>
 				<h4>Tentang</h4>
-			<p>Website Resep sederhana, untuk memenuhi tugas dari dicoding.com</p>
-			</div>
-			<ul>
-				<li><i class="fa-solid fa-phone"></i>+628123456789</li>
-				<li><i class="fa-solid fa-envelope"></i>djamaatul.anbiya@gmail.com</li>
-				<li><i class="fa-brands fa-twitter"></i>@djamaatul</li>
-				<li><i class="fa-brands fa-github"></i>@djamaatul</li>
-			</ul>
-		</div>
+				<p>Website Resep sederhana, untuk memenuhi tugas dari dicoding.com</p>
+			</figure>
+			<nav>
+				<ul>
+					<li><i class="fa-solid fa-phone"></i>+628123456789</li>
+					<li><i class="fa-solid fa-envelope"></i>djamaatul.anbiya@gmail.com</li>
+					<li><i class="fa-brands fa-twitter"></i>@djamaatul</li>
+					<li><i class="fa-brands fa-github"></i>@djamaatul</li>
+				</ul>
+			</nav>
+		</section>
 		<span>Copyright &copy; 2024</span>
 	</footer>
 </body>

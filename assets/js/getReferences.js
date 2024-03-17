@@ -26,8 +26,8 @@
 		const data = random.meals[0]
 		document.getElementById('random-section').innerHTML = `
 			<h4>Masakan Rekomendasi</h4>
-			<img src="${data.strMealThumb}" alt="" width="100%">
-			<a href="${base}pages/detail.html?i=${data.idMeal}"><h5>${data.strMeal}</h5></a>
+			<a href="${base}pages/detail.html?i=${data.idMeal}"><img src="${data.strMealThumb}" alt="" width="100%"></a>
+			<h5>${data.strMeal}</h5>
 		`
 	}
 })();

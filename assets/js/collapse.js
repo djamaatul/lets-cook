@@ -22,7 +22,7 @@ renderAside(focusing === 'false' || !focusing)
 
 collapse.addEventListener('click',() => {
 	
-	const content = document.querySelector('.collapse-container div');
+	const content = document.querySelector('.collapse-container figure');
 	const unseted = content.style.maxHeight === '99rem';
 	
 	content.style.maxHeight = unseted ? '0rem' : '99rem'

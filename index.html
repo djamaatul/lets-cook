@@ -22,12 +22,6 @@
 				<li><a href="./pages/filter.html?a=Japanese">Masakan Jepang</a></li>
 				<li><a href="#footer">Tentang</a></li>
 				<li><a href="https://github.com/djamaatul">My Github</a></li>
-				<li class="search">
-					<button>
-						<i class="fa-solid fa-magnifying-glass"></i>
-					</button>
-					<input type="text" placeholder="Cari" id="search" onkeypress="handleSearch(this,event)" onfocus="handleFocus(this)" onblur="handleBlur(this)">
-				</li>
 			</ul>
 		</nav>
 		<button class="icon-button" id="header-button">
@@ -36,53 +30,59 @@
 	</header>
 	<main>
 		<div id="content">
-			<section id="cards">
-				<div class="card skeleton"></div>
-				<div class="card skeleton"></div>
-				<div class="card skeleton"></div>
-				<div class="card skeleton"></div>
-				<div class="card skeleton"></div>
-				<div class="card skeleton"></div>
-				<div class="card skeleton"></div>
-				<div class="card skeleton"></div>
-				<div class="card skeleton"></div>
-					
-			</section>
-			<section>
-					<div id="pagination" >
-						<button type="button" id="prev" disabled>Sebelumnya</button>
-						<span id="page"></span>
-						<button type="button" id="next">Selanjutnya</button>
-					</div>
-			</section>
+			<article>
+				<section id="cards">
+					<a class="card skeleton"></a>
+					<a class="card skeleton"></a>
+					<a class="card skeleton"></a>
+					<a class="card skeleton"></a>
+					<a class="card skeleton"></a>
+					<a class="card skeleton"></a>
+					<a class="card skeleton"></a>
+					<a class="card skeleton"></a>
+					<a class="card skeleton"></a>
+						
+				</section>
+				<section id="pagination" >
+					<button type="button" id="prev" disabled>Sebelumnya</button>
+					<span id="page"></span>
+					<button type="button" id="next">Selanjutnya</button>
+				</section>
+			</article>
 		</div>
 		<aside>
 			<section id="categories-section">
 				<h4>Pencarian berdasarkan Kategori </h4>
-				<div id="categories">
+				<figure id="categories">
 					<a href="#" class="tag skeleton" style="color: transparent">Beef</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Breakfast</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Chicken</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Dessert</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Chicken</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Dessert</a>
-				</div>
+				</figure>
+				<figure class="search">
+					<button>
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</button>
+					<input type="text" placeholder="Cari" id="search" onkeypress="handleSearch(this,event)" onfocus="handleFocus(this)" onblur="handleBlur(this)">
+				</figure>
 			</section>
 			<section id="areas-section" class="collapse-container">
 				<h4 class="collapse">Pencarian berdasarkan Negara <i class="fa-solid fa-chevron-down"></i></h4>
-				<div id="areas">
+				<figure id="areas">
 					<a href="#" class="tag skeleton" style="color: transparent">Beef</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Breakfast</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Chicken</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Dessert</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Chicken</a>
 					<a href="#" class="tag skeleton" style="color: transparent">Dessert</a>
-				</div>
+				</figure>
 			</section>
 			<section id="random-section">
 				<h4>Masakan Rekomendasi</h4>
-				<img src="https://www.themealdb.com/images/media/meals/qqwypw1504642429.jpg" alt="" width="100%">
-				<a href="./pages/detail.html?i=52828"><h5>Vietnamese Grilled Pork (bun-thit-nuong)</h5></a>
+				<a href="./pages/detail.html?i=52828"><img src="https://www.themealdb.com/images/media/meals/qqwypw1504642429.jpg" alt="" width="100%"></a>
+				<h5>Vietnamese Grilled Pork (bun-thit-nuong)</h5>
 			</section>
 			<section id="profile-section" class="aside-section">
 				<h4 style="align-self: start">Profile</h4>
@@ -90,18 +90,20 @@
 		</aside>
 	</main>
 	<footer id="footer">
-		<div class="contact">
-			<div>
+		<section class="contact">
+			<figure>
 				<h4>Tentang</h4>
-			<p>Website Resep sederhana, untuk memenuhi tugas dari dicoding.com</p>
-			</div>
-			<ul>
-				<li><i class="fa-solid fa-phone"></i>+628123456789</li>
-				<li><i class="fa-solid fa-envelope"></i>djamaatul.anbiya@gmail.com</li>
-				<li><i class="fa-brands fa-twitter"></i>@djamaatul</li>
-				<li><i class="fa-brands fa-github"></i>@djamaatul</li>
-			</ul>
-		</div>
+				<p>Website Resep sederhana, untuk memenuhi tugas dari dicoding.com</p>
+			</figure>
+			<nav>
+				<ul>
+					<li><i class="fa-solid fa-phone"></i>+628123456789</li>
+					<li><i class="fa-solid fa-envelope"></i>djamaatul.anbiya@gmail.com</li>
+					<li><i class="fa-brands fa-twitter"></i>@djamaatul</li>
+					<li><i class="fa-brands fa-github"></i>@djamaatul</li>
+				</ul>
+			</nav>
+		</section>
 		<span>Copyright &copy; 2024</span>
 	</footer>
 </body>

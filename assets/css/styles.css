@@ -105,6 +105,10 @@ button:hover{
 	flex-basis:70%;
 }
 
+#content article {
+	display: flex
+}
+
 #cards {
 	display: flex;
 	flex-wrap: wrap;
@@ -163,15 +167,14 @@ aside {
 }
 
 aside section{
-	background: white
+	background: white;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem
 }
 
 aside section > h4 {
-	margin-top: 0px;
-}
-
-aside .search {
-	min-height: 2rem
+	margin: 0px;
 }
 
 .flex-1 {
@@ -189,7 +192,7 @@ footer .contact{
 	display: flex;
 }
 
-footer div{
+footer figure{
 	flex: 1
 }
 
@@ -238,13 +241,17 @@ aside > section{
 	border: 1px solid rgba(0,0,0,0.1)
 }
 
-aside > section > div {
+aside #categories, #areas {
 	display: flex;
 	flex-wrap: wrap;
 	gap: .4rem
 }
 
-.collapse-container div{
+.collapse-container {
+	display: block
+}
+
+.collapse-container figure {
 	max-height: 0rem;
 	overflow-y: hidden;
 	transition-duration: 300ms;
@@ -367,11 +374,6 @@ aside > section > div {
 		display: flex;
 		justify-content: end
 	}
-	header nav {
-		order: 3;
-		justify-self: stretch;
-		min-width: 10rem
-	}
 	nav ul li:nth-child(1){
 		display:none
 	}
@@ -384,6 +386,11 @@ aside > section > div {
 	.search{
 		flex: 1;
 	}
+}
+
+header nav {
+	align-items:center;
+	display: flex;
 }
 
 #profile-section {
@@ -403,6 +410,11 @@ aside > section > div {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem;
+}
+
+#content article section#cards {
+	padding: 0px;
+	background-color: transparent
 }
 
 .card-icon{
@@ -442,6 +454,14 @@ aside > section > div {
 	padding: 2rem
 }
 
+.card img {
+	width: auto
+}
+
+#pagination {
+	background-color: white
+}
+
 article img {
 	width: 100%;
 	object-fit: cover
@@ -467,4 +487,14 @@ header nav ul a:hover{
 #random-section a:hover{
 	color: orange;
 	margin-bottom:0px
+}
+
+#random-section h5 {
+	margin: 0px;
+	text-align: center;
+	font-weight: lighter
+}
+
+figure {
+	margin: 0px
 }

@@ -23,7 +23,7 @@ let data = [];
 			next.disabled = true
 		}
 		page.innerHTML = `
-			<div class="pages">
+			<figure class="pages">
 				${
 					[...Array(totalPage)].map((_, index)=> {
 						return `
@@ -33,7 +33,7 @@ let data = [];
 						`
 					}).join('')
 				}
-			</div>
+			</figure>
 		`;
 		
 		const cards = data.slice(start, end).map(item => {
@@ -45,13 +45,13 @@ let data = [];
 			}
 			return `
 				<a href="pages/detail.html?i=${item.idMeal}" class="card">
-						<div class="description">
+						<figure class="description">
 							<h4>${item.strMeal}</h4>
-								<div class="tags">${tags}</div>
-							<div class="intructions">
+							<div class="tags">${tags}</div>
+							<p class="intructions">
 								${item.strInstructions}
-							</div>
-						</div>
+							</p>
+						</figure>
 						<img src="${item.strMealThumb}" alt="" />
 				</a>
 			`;
@@ -63,7 +63,7 @@ let data = [];
 		render();
 	} else {
 		cardsContainer.innerHTML = `
-			<div style="align-self: center">Not Found :(</div>
+			<section style="align-self: center">Not Found :(</section>
 		`;
 	}
 

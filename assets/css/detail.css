@@ -15,7 +15,7 @@
 	padding-top: 2px
 }
 
-.article-gradients div {
+.article-gradients figure {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem;

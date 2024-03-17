@@ -11,10 +11,10 @@ const article = document.querySelector('#content article');
 		const measure = data[`strMeasure${index + 1}`] || '';
 		const gradient = data[`strIngredient${index + 1}`] || '';
 		if (!measure || !gradient) return [];
-		return `<div class="gradient">
+		return `<section class="gradient">
 			<img src="https://www.themealdb.com/images/ingredients/${gradient}.png" alt="" />
 			<span>${measure} <span>${gradient}</span></span>
-		</div>`;
+		</section>`;
 	}).join('');
 
 	const tags = data.strTags?.split(',').map((item) => {
@@ -25,15 +25,15 @@ const article = document.querySelector('#content article');
 		<section class="article-title">
 			<img src="${data.strMealThumb}" alt="">
 			<h2><img src="https://www.themealdb.com/images/icons/flags/big/64/${flags[data.strArea]}.png" alt="" />${data.strMeal}</h2>
-			<div class="tags">
+			<figure class="tags">
 				${tags}
-			</div>
+			</figure>
 		</section>
 		<section class="article-gradients">
 			<h3>Bahan Bahan</h3>
-			<div>
+			<figure>
 				${gradients}
-			</div>
+			</figure>
 		</section>
 		<section class="article-intruction">
 			<p>${data.strInstructions}</p>

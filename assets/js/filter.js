@@ -20,7 +20,7 @@ let data = [];
 		const currentPage = end / 10;
 		const totalPage = Math.ceil(data.length/10);
 		page.innerHTML = `
-			<div class="pages">
+			<figure class="pages">
 				${
 					[...Array(totalPage)].map((_, index)=> {
 						return `
@@ -30,7 +30,7 @@ let data = [];
 						`
 					}).join('')
 				}
-			</div>
+			</figure>
 		`;
 		
 		const cards = data.slice(start, end).map(item => {
@@ -48,7 +48,7 @@ let data = [];
 		render();
 	} else {
 		cardsContainer.innerHTML = `
-			<div style="align-self: center">Not Found :(</div>
+			<article style="align-self: center">Not Found :(</article>
 		`;
 	}
 
