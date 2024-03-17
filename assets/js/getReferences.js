@@ -1,5 +1,5 @@
 (async () => {
-	const flags = await (await fetch('../../assets/data/flags.json')).json();
+	const flags = await (await fetch('../assets/data/flags.json')).json();
 
 	const origin = await (await fetch(`https://themealdb.com/api/json/v1/1/list.php?a=list`)).json();
 

@@ -1,7 +1,8 @@
 const article = document.querySelector('#content article');
 
 (async () => {
-	const flags = await (await fetch('../../assets/data/flags.json')).json();
+	const base = location.href.replace(/\/pages\/.+/g,'')
+	const flags = await (await fetch(`${base}/assets/data/flags.json`)).json();
 	const response = await (await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php${location.search}`)).json();
 
 	const data = response.meals[0];
