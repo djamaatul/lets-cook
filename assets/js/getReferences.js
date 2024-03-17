@@ -20,4 +20,14 @@
 		const color = `${generateNumber()},${generateNumber()},${generateNumber()}`;
 		return `<a href="${base}pages/filter.html?c=${item.strCategory}" class="tag" style="background-color: rgba(${color},1);color: white">${item.strCategory}</a>`;
 	}).join('');
+
+	const random = await (await fetch('https://www.themealdb.com/api/json/v1/1/random.php')).json()
+	if(random){
+		const data = random.meals[0]
+		document.getElementById('random-section').innerHTML = `
+			<h4>Masakan Rekomendasi</h4>
+			<img src="${data.strMealThumb}" alt="" width="100%">
+			<a href="${base}pages/detail.html?i=${data.idMeal}"><h5>${data.strMeal}</h5></a>
+		`
+	}
 })();

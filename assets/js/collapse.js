@@ -3,7 +3,7 @@ const button = document.querySelector('#header-button');
 const aside = document.querySelector('aside');
 const content = document.querySelector('#content');
 
-const focusing = localStorage.getItem('aside-collapse');
+const focusing = localStorage.getItem('--aside-collapse');
 button.dataset.focus = focusing;
 
 const renderAside = (open) => {
@@ -18,7 +18,7 @@ const renderAside = (open) => {
 	}
 }
 
-renderAside(focusing === 'false')
+renderAside(focusing === 'false' || !focusing)
 
 collapse.addEventListener('click',() => {
 	
@@ -39,7 +39,7 @@ collapse.addEventListener('click',() => {
 button.onclick = () => {
 	let focus = button.dataset.focus === 'true';
 	focus = focus || (typeof button.dataset.focus === 'undefined' && window.innerWidth <= 1024)
-	localStorage.setItem('aside-collapse', !focus)
+	localStorage.setItem('--aside-collapse', !focus)
 	renderAside(focus)
 	button.dataset.focus = focus ? false : true
 }

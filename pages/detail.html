@@ -17,13 +17,20 @@
 </head>
 <body>
 	<header class="header">
-		<a href="../index.html"><h1>Lets <span>Cook!</span></h1></a>
-		<div class="search flex-1">
-			<button>
-				<i class="fa-solid fa-magnifying-glass"></i>
-			</button>
-			<input type="text" placeholder="Cari" id="search" onkeypress="handleSearch(this,event)">
-		</div>
+		<h1 id="title"><a href="../index.html">Lets <span>Cook!</span></a></h1>
+		<nav class="flex-1">
+			<ul>
+				<li><a href="./pages/filter.html?a=Japanese">Masakan Jepang</a></li>
+				<li><a href="#footer">Tentang</a></li>
+				<li><a href="https://github.com/djamaatul">My Github</a></li>
+				<li class="search">
+					<button>
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</button>
+					<input type="text" placeholder="Cari" id="search" onkeypress="handleSearch(this,event)" onfocus="handleFocus(this)" onblur="handleBlur(this)">
+				</li>
+			</ul>
+		</nav>
 		<button class="icon-button" id="header-button">
 			<i class="fa-solid fa-burger"></i>
 		</button>
@@ -90,12 +97,17 @@
 					<a href="#" class="tag skeleton" style="color: transparent">Dessert</a>
 				</div>
 			</section>
+			<section id="random-section">
+				<h4>Masakan Rekomendasi</h4>
+				<img src="https://www.themealdb.com/images/media/meals/qqwypw1504642429.jpg" alt="" width="100%">
+				<a href="./pages/detail.html?i=52828"><h5>Vietnamese Grilled Pork (bun-thit-nuong)</h5></a>
+			</section>
 			<section id="profile-section" class="aside-section">
 				<h4 style="align-self: start">Profile</h4>
 			</section>
 		</aside>
 	</main>
-	<footer>
+	<footer id="footer">
 		<div class="contact">
 			<div>
 				<h4>Tentang</h4>

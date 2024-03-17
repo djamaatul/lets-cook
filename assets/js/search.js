@@ -8,3 +8,11 @@ const handleSearch = ({ value }, e) => {
 		window.open(`${base}?s=${value}`, '_self');
 	}
 };
+
+const handleFocus = (e) => {
+	e.parentElement.style.flex = '1'
+}
+
+const handleBlur = (e) => {
+	e.parentElement.style.flex = 'none'
+}
