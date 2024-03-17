@@ -1,0 +1,1 @@
+const generateNumber = (add = 100) => (Math.random() * 100 | 0) + add;

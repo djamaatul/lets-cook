@@ -1,0 +1,41 @@
+.article-title img {
+	border-radius: .5rem
+}
+
+.article-title h2 {
+	border-radius: .5rem;
+	display: flex;
+	gap: .5rem;
+	align-items:center
+}
+
+.article-title h2 img {
+	width: 2rem;
+	aspec-ratio: 1/6;
+	padding-top: 2px
+}
+
+.article-gradients div {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center
+}
+
+.gradient {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 30%;
+	align-items: center
+}
+
+.gradient img {
+	width: 5rem;
+	aspect-ratio: 1/1
+}
+
+.article-intruction p {
+	text-align: justify;
+	text-indent: 2rem;
+	line-height: 2rem
+}

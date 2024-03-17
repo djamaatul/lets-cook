@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<script src="/assets/js/filter.js" defer></script>
+	<script src="/assets/js/generateNumber.js" defer></script>
+	<script src="/assets/js/collapse.js" defer></script>
+	<script src="/assets/js/search.js" defer></script>
+	<script src="/assets/js/getProfile.js" defer></script>
+	<script src="/assets/js/getReferences.js" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Document</title>
+</head>
+<body>
+	<header class="header">
+		<a href="/"><h1>Lets <span>Cook!</span></h1></a>
+		<div class="search flex-1">
+			<button>
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</button>
+			<input type="text" placeholder="Cari" id="search" onkeypress="handleSearch(this,event)">
+		</div>
+		<button class="icon-button" id="header-button">
+			<i class="fa-solid fa-burger"></i>
+		</button>
+	</header>
+	<main>
+		<div id="content">
+			<section id="cards-icons">
+				<div class="card skeleton"></div>
+				<div class="card skeleton"></div>
+				<div class="card skeleton"></div>
+				<div class="card skeleton"></div>
+				<div class="card skeleton"></div>
+				<div class="card skeleton"></div>
+				<div class="card skeleton"></div>
+				<div class="card skeleton"></div>
+				<div class="card skeleton"></div>
+					
+			</section>
+			<article>
+					<div id="pagination" >
+						<button type="button" id="prev" disabled>Sebelumnya</button>
+						<span id="page"></span>
+						<button type="button" id="next">Selanjutnya</button>
+					</div>
+			</article>
+		</div>
+		<aside>
+			<section id="categories-section">
+				<h4>Pencarian berdasarkan Kategori </h4>
+				<div id="categories">
+					<a href="#" class="tag skeleton" style="color: transparent">Beef</a>
+					<a href="#" class="tag skeleton" style="color: transparent">Breakfast</a>
+					<a href="#" class="tag skeleton" style="color: transparent">Chicken</a>
+					<a href="#" class="tag skeleton" style="color: transparent">Dessert</a>
+					<a href="#" class="tag skeleton" style="color: transparent">Chicken</a>
+					<a href="#" class="tag skeleton" style="color: transparent">Dessert</a>
+				</div>
+			</section>
+			<section id="areas-section" class="collapse-container">
+				<h4 class="collapse">Pencarian berdasarkan Negara <i class="fa-solid fa-chevron-down"></i></h4>
+				<div id="areas">
+					<a href="#" class="tag skeleton" style="color: transparent">Beef</a>
+					<a href="#" class="tag skeleton" style="color: transparent">Breakfast</a>
+					<a href="#" class="tag skeleton" style="color: transparent">Chicken</a>
+					<a href="#" class="tag skeleton" style="color: transparent">Dessert</a>
+					<a href="#" class="tag skeleton" style="color: transparent">Chicken</a>
+					<a href="#" class="tag skeleton" style="color: transparent">Dessert</a>
+				</div>
+			</section>
+			<section id="profile-section" class="aside-section">
+				<h4 style="align-self: start">Profile</h4>
+			</section>
+		</aside>
+	</main>
+	<footer>
+		<div class="contact">
+			<div>
+				<h4>Tentang</h4>
+			<p>Website Resep sederhana, untuk memenuhi tugas dari dicoding.com</p>
+			</div>
+			<ul>
+				<li><i class="fa-solid fa-phone"></i>+628123456789</li>
+				<li><i class="fa-solid fa-envelope"></i>djamaatul.anbiya@gmail.com</li>
+				<li><i class="fa-brands fa-twitter"></i>@djamaatul</li>
+				<li><i class="fa-brands fa-github"></i>@djamaatul</li>
+			</ul>
+		</div>
+		<span>Copyright &copy; 2024</span>
+	</footer>
+</body>
+</html>
