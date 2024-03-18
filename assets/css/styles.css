@@ -163,7 +163,6 @@ aside {
 	gap: 1rem;
 	transition-duration: 300ms;
 	overflow: hidden;
-	maxHeight: 200vh
 }
 
 aside section{
@@ -385,6 +384,9 @@ aside #categories, #areas {
 	}
 	.search{
 		flex: 1;
+	}
+	#content article section.gradient{
+		padding: .5rem
 	}
 }
 
